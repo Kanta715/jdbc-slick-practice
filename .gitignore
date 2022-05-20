@@ -1,0 +1,15 @@
+logs
+target
+.metals
+.g8
+project/project
+project/target
+/.bsp
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+/.DS_Store
+

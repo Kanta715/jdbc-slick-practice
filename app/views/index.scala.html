@@ -1,0 +1,10 @@
+@import controllers.User
+@import scala.collection.mutable.ListBuffer
+@(members: ListBuffer[User])
+
+@main("Welcome to Play!") {
+  <h1>Welcome to Play!</h1>
+  @for(user <- members) {
+    <p><span>@user.id:</span><span>@user.name</span></p>
+  }
+}
