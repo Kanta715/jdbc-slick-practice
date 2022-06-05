@@ -9,10 +9,12 @@ scalaVersion := "2.12.11"
 
 libraryDependencies ++= Seq(
   guice,
-  "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test,
-  "mysql" % "mysql-connector-java" % "5.1.41",
+  "org.scalatestplus.play" %% "scalatestplus-play"   % "5.0.0" % Test,
+  "mysql"                   % "mysql-connector-java" % "5.1.41",
   jdbc,
-  "org.scalatest"       %% "scalatest"        % "3.0.5" % Test,
+  "com.typesafe.play"      %% "play-slick"           % "3.0.3",
+  "com.typesafe.slick"     %% "slick-codegen"        % "3.2.1",
+  "org.scalatest"          %% "scalatest"            % "3.0.5" % Test,
 )
 
 // Adds additional packages into Twirl

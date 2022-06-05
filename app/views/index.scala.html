@@ -1,10 +1,19 @@
-@import controllers.User
 @import scala.collection.mutable.ListBuffer
+@import model.User
 @(members: ListBuffer[User])
 
 @main("Welcome to Play!") {
-  <h1>Welcome to Play!</h1>
+  <h1>User dataset</h1>
   @for(user <- members) {
-    <p><span>@user.id:</span><span>@user.name</span></p>
+    <div>
+      <p>id: @user.id</p>
+      <p>name: @user.fullName</p>
+      <p>age: @user.age</p>
+      <p>address: @user.address.getOrElse("@@@")</p>
+      <p>user: @user</p>
+
+      <p>--------------------------------------------------------------</p>
+
+    </div>
   }
 }
