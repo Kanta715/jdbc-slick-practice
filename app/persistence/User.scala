@@ -8,7 +8,7 @@ import slick.jdbc.MySQLProfile
 import db.UserTable
 import model.User
 
-class UserRepository extends ExtensionMethodConversions {
+object UserRepository extends ExtensionMethodConversions {
   import MySQLProfile.api._
 
   val users = UserTable.users
@@ -26,4 +26,3 @@ class UserRepository extends ExtensionMethodConversions {
   }
 }
 
-object UserRepository extends UserRepository
